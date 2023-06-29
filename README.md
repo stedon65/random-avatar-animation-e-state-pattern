@@ -1,7 +1,7 @@
 # Random Avatar Animation e State Pattern
 
 ### Introduzione
-Nel dominio dello spazio virtuale che oggi chiamiamo, ad esempio, **Metaverso**, vive un concetto caratteristico: quello di **Avatar**.
+Nel dominio di uno spazio virtuale che oggi chiamiamo, ad esempio, **Metaverso**, vive un concetto caratteristico: quello di **Avatar**.
 
 Un avatar è una rappresentazione digitale di un essere vivente in uno spazio virtuale.
 
