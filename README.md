@@ -1,1 +1,1 @@
-# random-avatar-animation-e-state-pattern
+# Random Avatar Animation e State Pattern
