@@ -19,7 +19,7 @@ A questo proposito, quindi, ho provato a _disaccoppiare_ gli stati di dominio da
 
 In questo semplice demo in cui un avatar di nome **Bryce** viene fatto muovere in maniera random, cercando il percorso più breve, gli stati di dominio sono gestiti tramite uno **State Pattern** che incapsula al suo interno i **trigger** necessari ai cambiamenti di stato dell'animazione da inviare all'Animator Controller di Unity.
 
-Per questo demo ho utilizzato il character e le animazioni gratuite dal sito mixamo citato sopra, istruendo opportunamenet Unity a gestire direttamente le animazioni importate per lo spostamento della posizione nello spazio tridimensionale tramite **Apply Root Motion**.
+Per questo demo ho utilizzato il **Character** e le **Animation** gratuite dal sito mixamo citato sopra, istruendo opportunamenet Unity a gestire direttamente le animazioni importate per lo spostamento della posizione nello spazio tridimensionale tramite **Apply Root Motion**.
 
 ### Codice
 
