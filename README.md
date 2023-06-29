@@ -22,7 +22,39 @@ In questo semplice demo in cui un avatar di nome **Bryce** viene fatto muovere i
 Per questo demo ho utilizzato il **Character** e le **Animation** gratuite dal sito mixamo citato sopra, istruendo opportunamenet Unity a gestire direttamente le animazioni importate per lo spostamento della posizione nello spazio tridimensionale tramite **Apply Root Motion**.
 
 ### Codice
+Per la macchina a stati ho creato una classe StateMachine che incapsula lo stato corrente e permette l'inizializzazione e il cambiamento di stato.
 
+```cs
+public class StateMachine
+{
+    private State actualState = null;
+
+    public State CurrentState
+    {
+        get
+        {
+            return actualState;
+        }
+        private set
+        {
+            actualState = value;
+        }
+    }
+
+    public void Init(State state)
+    {
+        CurrentState = state;
+        state.OnEnter();
+    }
+
+    public void ChangeState(State state)
+    {
+        CurrentState.OnExit();
+        CurrentState = state;
+        state.OnEnter();
+    }
+}
+```
 
 
 
