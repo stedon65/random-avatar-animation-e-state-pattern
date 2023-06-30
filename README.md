@@ -15,11 +15,11 @@ L'avatar, però, è un concetto di dominio, e non sempre è possibile associare 
 
 Se devo controllare che il mio avatar non vada a sbattere contro un muro quello che importa è che lo faccia mentre l'avatar è nello stato di dominio **Walking**, poco importa se sta iniziando o finendo di camminare, altrimenti rischierei di dover fare una serie interminabile di if-else sparsi nel codice in tutti gli stati di animazione rilevanti per quel controllo.
 
-A questo proposito, quindi, ho provato a _disaccoppiare_ gli stati di dominio dagli stati di animazione utilizzando il buon vecchio **State Pattern**.
+A questo proposito, quindi, ho provato a _disaccoppiare_ gli stati di dominio dagli stati di animazione utilizzando lo **State Pattern**.
 
 In questo semplice demo in cui un avatar di nome **Bryce** viene fatto muovere in maniera random, cercando il percorso più breve, gli stati di dominio sono gestiti tramite uno **State Pattern** che incapsula al suo interno i **trigger** necessari ai cambiamenti di stato dell'animazione da inviare all'Animator Controller di Unity.
 
-Per questo demo ho utilizzato il **Character** e le **Animation** gratuite dal sito mixamo citato sopra, istruendo opportunamenet Unity a gestire direttamente le animazioni importate per lo spostamento della posizione nello spazio tridimensionale tramite **Apply Root Motion**.
+Per questo demo ho utilizzato il **Character** e le **Animation** gratuite dal sito mixamo citato sopra, istruendo opportunamente Unity a gestire direttamente le animazioni importate per lo spostamento della posizione nello spazio tridimensionale tramite **Apply Root Motion**.
 
 ### Codice
 Per la macchina a stati ho creato una classe **StateMachine** che incapsula lo stato corrente e permette l'inizializzazione e il cambiamento di stato.
