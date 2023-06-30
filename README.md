@@ -1,4 +1,4 @@
-# Random Avatar Animation e State Pattern
+# Random Avatar Animation e State Pattern in Unity
 
 ### Introduzione
 Nel dominio di uno spazio virtuale che oggi chiamiamo, ad esempio, **Metaverso**, vive un concetto caratteristico: quello di **Avatar**.
